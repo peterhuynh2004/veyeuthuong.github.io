@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="theme-color" content="#000000" />
+        <!-- Favicon -->
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="16x16"
+            href="./favicon/favicon-16x16.png"
+        />
+        <meta name="msapplication-TileColor" content="#ffffff" />
+        <meta name="theme-color" content="#ffffff" />
+        <!-- Reset CSS -->
+        <link rel="stylesheet" href="./reset.css" />
+        <!-- Style CSS -->
+        <link rel="stylesheet" href="./style.css" />
+        <!-- Font -->
+        <link rel="stylesheet" href="./font/stylesheet.css" />
+        <title>Vé yêu thương</title>
+    </head>
+    <body>
+        <div id="root"></div>
+
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                var sdtElements = document.querySelectorAll(".hidden-sdt");
+                sdtElements.forEach(function (element) {
+                    var originalText = element.textContent;
+                    var hiddenText =
+                        originalText.substring(0, originalText.length - 3) +
+                        "***";
+                    element.textContent = hiddenText;
+                });
+            });
+        </script>
+    </body>
+</html>

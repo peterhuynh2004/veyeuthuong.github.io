@@ -1,0 +1,8 @@
+@font-face {
+    font-family: "Beach Resort";
+    src: url("beach_resort/BeachResort.woff2") format("woff2"),
+        url("beach_resort/BeachResort.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}

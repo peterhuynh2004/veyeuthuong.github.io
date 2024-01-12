@@ -1,0 +1,94 @@
+.nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 60%;
+}
+
+.Avatar {
+    width: 22%;
+}
+
+.comments_title {
+    width: 100%;
+}
+
+.title {
+    margin-top: 25px;
+    font-size: 4rem;
+    font-family: Beach Resort;
+    color: #f8d579;
+    text-align: center;
+}
+
+.desc {
+    margin-top: 10px;
+    font-size: 2.5rem;
+    font-family: Beach Resort;
+    color: #f8d579;
+    text-align: center;
+}
+
+.list {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+}
+
+.thongtin {
+    margin-top: 50px;
+    padding: 5px;
+    width: 100%;
+    background-color: #fdf0df;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(218, 220, 237, 0.5);
+}
+
+.table {
+    margin: 5px auto;
+    font-size: 1.65rem;
+    text-align: center;
+}
+
+.table thead th {
+    text-align: center;
+    padding: 15px;
+}
+
+.table td {
+    padding-top: 20px;
+}
+
+@media screen and (min-width: 576px) {
+    .title {
+        font-size: 5rem;
+    }
+
+    .desc {
+        font-size: 3rem;
+    }
+
+    .thongtin {
+        width: 550px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .list {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .title {
+        font-size: 7rem;
+    }
+
+    .desc {
+        font-size: 5rem;
+    }
+
+    .thongtin {
+        width: 550px;
+    }
+}
